@@ -8,9 +8,6 @@ const swaggerOptions = {
             contact: {
                 name: "Gabriel Dehner"
             },
-            // servers: [process.env.HOST + ":" + process.env.PORT]
-            // servers: ["http://localhost:5000/api/v1"]
-            // servers: [{ url: '/api/' + app.get('version_api') }]
         },
         servers: [{ url: '/' + process.env.API + "/" + process.env.VERSION }],
         host: process.env.HOST + ":" + process.env.PORT,
