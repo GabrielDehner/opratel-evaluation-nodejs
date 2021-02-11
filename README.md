@@ -15,6 +15,11 @@ URI_MONGO_DB=mongodb://localhost:27017/
 NAME_DB=bd_test_opratel
 URI_SWAGGER=api-docs
 ```
+### Datos de BD
+*Nombre DB: bd_test_opratel*
+*Nombre de collection utilizada: User*
+*Data Import: ./dataImport/User.json*
+
 
 ### Ejecución
 _Dentro del directorio opratel-evaluation utilizar los siguientes comandos de ejecución._

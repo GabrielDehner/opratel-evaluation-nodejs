@@ -1,0 +1,4 @@
+{"_id":{"$oid":"602519cb7fbc143ffbaf6678"},"username":"gadehner","nombre":"Gabriel","apellido":"Dehner","email":"gadehner@gmail.com"}
+{"_id":{"$oid":"60251b905244214160815e64"},"username":"angelparada","nombre":"Angel","apellido":"Parada","email":"angel.parada@opratel.com"}
+{"_id":{"$oid":"602536ff1101fc5f1746221a"},"username":"igfer","nombre":"Ignacio","apellido":"Fernandez","email":"igfer@gmail.com"}
+{"_id":{"$oid":"602537a51e1b045f6e209505"},"username":"rodolfojimenez","nombre":"Rodolfo","apellido":"Gimenez","email":"rodoji@gmail.com"}
