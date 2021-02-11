@@ -4,7 +4,7 @@
     "description": "Opratel technical evaluation",
     "main": "index.js",
     "scripts": {
-        "test": "mocha ./test/*.js",
+        "test": "export $(cat .env) && mocha ./test/*.js",
         "start": "export $(cat .env) && node index.js"
     },
     "author": "Gabriel Dehner",
