@@ -25,9 +25,9 @@ URI_SWAGGER=api-docs
 ### Ejecución
 _Dentro del directorio opratel-evaluation utilizar los siguientes comandos de ejecución._
 * **npm i** - *Descarga los módulos necesarios.*
-* **npm test** - *Ejecuta las pruebas dentro del directorio "test". Cabe mencionar que se realizaron pruebas utilizando Chai junto con Mocha.*
 * **export $(cat .env | xargs) && npm start** - *Genera las variables de entorno e inicia el proyecto compilado.*
 * **npm start** - *Inicia el proyecto compilado.*
+* **npm test** - *Ejecuta las pruebas dentro del directorio "test". Cabe mencionar para las pruebas de la API, se debe haber ejecutado el proyecto previamente.*
 
 ### Endpoints Soportados (en ruta descrita o equivalente)
 * **(POST) http://localhost:5000/api/v1/user** - *Crea un nuevo usuario con el body compuesto por "username, nombre, apellido, email" (addUser).*
