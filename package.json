@@ -1,0 +1,18 @@
+{
+  "name": "opratel-evaluation",
+  "version": "1.0.0",
+  "description": "Opratel technical evaluation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/*.js"
+  },
+  "author": "Gabriel Dehner",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
+    "swagger-jsdoc": "^6.0.2",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
