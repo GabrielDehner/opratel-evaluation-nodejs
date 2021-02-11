@@ -17,11 +17,11 @@ userController.addUser = async(req, res, next) => {
         var apellido = req.body.apellido;
         var email = req.body.email;
         if (username && nombre && apellido && email && userService.verifyEmail(email)) {
-            var create = await userService.addUser(username, nombre, apellido, email);
-            if (create) {
+            var idCreate = await userService.addUser(username, nombre, apellido, email);
+            if (idCreate) {
                 res.status(200).send(
                     new Response(
-                        true, null, "Usuario creado correctamente."
+                        true, { _id: idCreate }, "Usuario creado correctamente."
                     )
                 );
             } else {

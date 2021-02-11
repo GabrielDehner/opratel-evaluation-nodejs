@@ -13,8 +13,8 @@ userService.addUser = async(username, nombre, apellido, email) => {
             apellido: apellido,
             email: email
         });
-        await newUser.save();
-        return true;
+        var respuesta = await newUser.save();
+        return (respuesta) ? respuesta._id : false;
     } else {
         return false;
     }
