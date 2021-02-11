@@ -10,8 +10,11 @@
     "author": "Gabriel Dehner",
     "license": "ISC",
     "dependencies": {
+        "chai": "^4.3.0",
+        "chai-http": "^4.3.0",
         "cors": "^2.8.5",
         "express": "^4.17.1",
+        "mocha": "^8.2.1",
         "mongoose": "^5.11.15",
         "swagger-jsdoc": "^6.0.2",
         "swagger-ui-express": "^4.1.6"
