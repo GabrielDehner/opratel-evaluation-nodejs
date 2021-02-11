@@ -1,7 +1,15 @@
+/**
+ * Declaraciones
+ * userService para solicitar funcionalidades a services.
+ * Response, para formateo de respuesta
+ */
 const userController = {};
 const userService = require('../services/User.service');
 var Response = require('../models/Response.model');
 
+/**
+ * Método encargado de añadir un nuevo usuario, o bien retornar que faltan datos o el username ya existe en la bd.
+ */
 userController.addUser = async(req, res, next) => {
     try {
         var username = req.body.username;
@@ -37,6 +45,9 @@ userController.addUser = async(req, res, next) => {
     }
 }
 
+/**
+ * Método encargado de eliminar un usuario por id
+ */
 userController.delUser = async(req, res, next) => {
     try {
         var id = req.params.id;
@@ -67,6 +78,9 @@ userController.delUser = async(req, res, next) => {
     }
 }
 
+/**
+ * Método encargado de listar a los usuarios
+ */
 userController.getUsers = async(req, res, next) => {
     try {
         let users = await userService.getUsers();
@@ -80,6 +94,9 @@ userController.getUsers = async(req, res, next) => {
     }
 }
 
+/**
+ * Método encargado de actualizar un usuario por id o bien retornar que no existe el usuario con el id ingresado o que faltan datos para actualizar.
+ */
 userController.updateUser = async(req, res, next) => {
     try {
         var id = req.params.id;
